@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.caritakip.CariDialogController"
+            headerText="Cari Bilgileri">
+    <content>
+        <GridPane hgap="10" vgap="10">
+            <Label text="Ad Soyad:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="adSoyadField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+            <Label text="Firma Adı:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextField fx:id="firmaAdiField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <Label text="Telefon:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <TextField fx:id="telefonField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        </GridPane>
+    </content>
+    <buttonTypes>
+        <ButtonType fx:id="okButton" text="Tamam" buttonData="OK_DONE"/>
+        <ButtonType text="İptal" buttonData="CANCEL_CLOSE"/>
+    </buttonTypes>
+</DialogPane>

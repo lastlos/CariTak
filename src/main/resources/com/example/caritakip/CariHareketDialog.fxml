@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<DialogPane xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.caritakip.CariHareketDialogController"
+            headerText="Yeni Cari İşlem Ekle">
+    <content>
+        <GridPane hgap="10" vgap="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="Tarih:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <DatePicker fx:id="tarihPicker" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+            <Label text="Açıklama:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextField fx:id="aciklamaField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <Label text="Borç:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <TextField fx:id="borcField" promptText="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+            <Label text="Alacak:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <TextField fx:id="alacakField" promptText="0.0" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        </GridPane>
+    </content>
+    <buttonTypes>
+        <ButtonType text="Kaydet" buttonData="OK_DONE"/>
+        <ButtonType text="İptal" buttonData="CANCEL_CLOSE"/>
+    </buttonTypes>
+</DialogPane>
