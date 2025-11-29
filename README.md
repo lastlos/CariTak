@@ -40,7 +40,7 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyebi
 
 1.  **Projeyi klonlayın:**
     ```sh
-    git clone
+    git clone https://github.com/lastlos/CariTak.git
     ```
 
 2.  **Proje dizinine gidin:**
